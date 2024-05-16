@@ -36,4 +36,3 @@ if __name__ == "__main__":
     except ValueError:
         print('-=' * 20)
         print("ERROR \nPlease enter valid positive numbers.")
-    print("ERROR \nPlease enter valid positive numbers.")
