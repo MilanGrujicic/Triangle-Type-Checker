@@ -16,7 +16,9 @@ def triangle_type(a, b, c):
 
 def is_right_triangle(a, b, c):
     '''Checks whether the given sides form a right-angled triangle.'''
-    return (b**2 + a**2 == c**2)
+    sides = [a, b, c]
+    hypotenuse = sides.pop(sides.index(max(sides)))
+    return (sides[0]**2 + sides[1]**2 == hypotenuse**2)
 
 if __name__ == "__main__":
     try:
