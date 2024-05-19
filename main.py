@@ -27,7 +27,7 @@ if __name__ == "__main__":
         c = round(float(input("Enter the length of side c: ")), 2)
 
         if a <= 0 or b <= 0 or c <= 0:
-            print("ERROR \nAt least one side is negative or zero.") 
+            print("ERROR. \nAt least one side is negative or zero.") 
         else:
             triangle = triangle_type(a, b, c)
             print('-=' * 20)
@@ -35,4 +35,4 @@ if __name__ == "__main__":
 
     except ValueError:
         print('-=' * 20)
-        print("ERROR \nPlease enter valid positive numbers.")
+        print("ERROR. \nPlease enter valid positive numbers.")
